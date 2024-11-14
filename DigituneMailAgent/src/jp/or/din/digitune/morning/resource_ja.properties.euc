@@ -1,0 +1,223 @@
+#
+# Morning All Properties
+#
+# $Id: resource_ja.properties.euc,v 1.3 1998/12/14 12:51:52 kazawa Exp kazawa $
+#
+# Morning Main Window properties.
+#
+# labels.
+#
+okLabel=Ok
+draftLabel=下書き
+sendLabel=送信
+cancelLabel=Cancel
+nameLabel=アカウント名
+userLabel=POP3 ユーザー ID
+passwordLabel=POP3 パスワード
+smtpLabel=SMTP サーバ名
+pop3Label=POP3 サーバ名
+usernameLabel=あなたのお名前
+addressLabel=あなたの Email アドレス
+deleteLabel=メッセージの掃除
+categoryLabel=カテゴリ
+quoterLabel=引用符
+addLabel=追加
+removeLabel=削除
+upLabel=上へ
+downLabel=下へ
+targetLabel=探索語句
+headerLabel=ヘッダ
+folderLabel=フォルダ
+inputfolderLabel=フォルダ名を入力して下さい。
+searchstrinputLabel=検索文字列
+currentfolderonlyLabel=現在のフォルダのみ
+ignorecaseLabel=大文字小文字を区別しない
+regexpLabel=正規表現
+confirmdeleteacLabel=現在のアカウントを削除してもよろしいですか？
+confirmdeletefolderLabel=現在のフォルダを削除してもよろしいですか？
+usernameLabel=名前
+useraddressLabel=Email アドレス
+commentLabel=コメント
+folderfontLabel=フォルダリストフォント:
+mailfontLabel=メールリストフォント:
+bodyfontLabel=メール本文フォント:
+linespaceLabel=行間:
+scrollbarThicknessLabel=スクロールバーの太さ:
+lineWrapLabel=行端での折り返し
+choiseLabel=選択
+#
+# strings.
+#
+maillistTitles=Subject,From,Date,Size
+folderlistTitles=Folder, Mail
+#
+morningimageName=images/Morning.gif
+timageName=images/t.gif
+nimageName=images/n.gif
+rimageName=images/r.gif
+fimageName=images/f.gif
+checkimageName=images/check.gif
+attachimageName=images/clip.gif
+folderimageName=images/folder.gif
+#
+accountFilename=account.lst
+addressFilename=address.lst
+#
+transactionTitle=送受信
+sendWindowTitle=メール送信
+accountDlgTitle=アカウント設定
+searchDlgTitle=メール検索
+searchingTitle=検索中
+templeteDlgTitle=テンプレート設定
+filterDlgTitle=メールフィルタ設定
+preferenceDlgTitle=表示設定
+visibleDlgTitle=表示ヘッダ選択
+filteringTitle=仕分け中
+deleteStr=メッセージを掃除する
+readingMails=メールを読み込んでいます ... しばらくお待ち下さい。
+readingList=メールリストを作成中 ... 
+waitStr=しばしお待ちを ...
+setAllSeenFlag=既読印をつけてます ... 
+cateNew=新規
+cateReply=返信
+cateForward=転送
+warningTitle=警告
+cantdeleteacStr=最後のアカウントは削除できません。
+deleteacTitle=現在のアカウントを削除
+deleteacTitle=現在のアカウントを削除
+addfolderTitle=新しいフォルダ追加
+deletefolderTitle=現在のフォルダを削除
+defragTitle=デフラグ
+attachTitle=添付ファイル
+saveTitle=メール書き出し
+importTitle=メール取り込み
+addressTitle=アドレス選択
+addheaderTitle=ヘッダ追加
+#
+doneStr=終了.
+authStateStr=認証中 ...
+sizeListStateStr=メールサイズリスト取得中 ...
+UIDListStateStr=UID リスト取得中 ...
+mailReceivingStr=メール受信中 ... 
+#
+openConnectionErrorStr=接続エラー
+authorizationErrorStr=認証エラー
+sizeListErrorStr=メールサイズリスト取得エラー
+retrErrorStr=RETR エラー
+updateErrorStr=更新エラー
+heloErrorStr=HELO エラー
+envelopeErrorStr=MAIL or RCPT エラー
+dataErrorStr=DATA エラー
+quitErrorStr=QUIT エラー
+#
+setupStateStr=新しいメールを読み込み中 ...
+initStateStr=HELO!
+envelopeStateStr=受信者を設定 ...
+transactionStateStr=メール送信中 ...
+#
+heloErrorStr=HELO エラー
+envelopeErrorStr=MAIL or RCPT エラー
+dataErrorStr=DATA エラー
+quitErrorStr=QUIT エラー
+#
+startStateStr=フォルダ情報読み込み中 ...
+processStateStr=メール処理中 ...
+writeErrorStr=書き込みエラー ...
+#
+attachStr=ファイル添付中
+detachStr=ファイル展開中
+writingStr=書き込み中 ... 
+fileError=ファイルエラー
+#
+saveStr=保存中
+#
+importStr=取り込み中
+#
+inputNewHeaderStr=新しいヘッダを入力して下さい。
+#
+nowfilteringStr=仕分け中 ...
+#
+foundStr=通発見！
+#
+# menu strings.
+#
+fileMenu=ファイル
+exportMenu=メールの書き出し(選択)
+allexportMenu=メールの書き出し(全部)
+importMenu=メールの取り込み
+createacMenu=アカウント作成
+changeacMenu=アカウント修正
+deleteacMenu=アカウント削除
+addaddressMenu=アドレス帳に追加
+addfolderMenu=フォルダ作成
+deletefolderMenu=フォルダ削除
+upfolderMenu=フォルダ上へ移動
+downfolderMenu=フォルダ下へ移動
+defragMenu=デフラグ
+exitMenu=終了
+mailMenu=メール
+transactionMenu=送受信
+currentAccountOnlyMenu=現在のアカウントのみ
+currentAccountOnlyTransactionMenu=送受信
+currentAccountOnlySendOnlyMenu=送信のみ
+currentAccountOnlyReceiveOnlyMenu=受信のみ
+newmailMenu=新規メール作成
+replymailMenu=返信メール作成
+forwardmailMenu=転送メール作成
+searchmailMenu=メール検索
+movemailMenu=メール移動
+copymailMenu=メールコピー
+autofilterMenu=自動仕分け
+selectedmailfilterMenu=選択メールを仕分け
+allmailfilterMenu=全てのメールを仕分け
+templeteMenu=テンプレート設定
+filterMenu=メールフィルタ設定
+viewMenu=表示
+threadviewMenu=スレッド表示
+allHeaderMenu=全ヘッダを表示
+setVisibleMenu=表示ヘッダ選択
+preferencesMenu=設定
+helpMenu=ヘルプ
+kfcCopyrightMenu=KFC 著作権表示
+folderlistprefMenu=表示設定
+folderlistforegroundMenu=文字色
+folderlistbackgroundMenu=背景色
+folderlistselectionforegroundMenu=選択文字色
+folderlistselectionbackgroundMenu=選択背景色
+maillistprefMenu=表示設定
+maillistforegroundMenu=文字色
+maillistbackgroundMenu=背景色
+maillistselectionforegroundMenu=選択文字色
+maillistselectionbackgroundMenu=選択背景色
+mailbodyprefMenu=表示設定
+mailbodyforegroundMenu=文字色
+mailbodyheaderforegroundMenu=文字色(ヘッダ)
+mailbodybackgroundMenu=背景色
+#
+# values.
+#
+scrollbarThickness=12
+lineSpace=2
+addressLines=16
+separatorSize=400,5
+maillistSize=580,100
+folderlistSize=120,465
+quoter=> 
+#
+defaultCharset=iso-2022-jp
+searchEncode=JISAutoDetect
+defaultVisibleHeaders=date, to, from, subject
+orderedHeaders=date, from, to, cc, bcc, subject
+#
+# Charset to Encode
+#
+to_us-ascii=8859_1
+from_us-ascii=8859_1
+to_iso-2022-jp=JIS
+from_iso-2022-jp=JISAutoDetect
+from_iso-2022-jp-2=JISAutoDetect
+from_x-sjis=JISAutoDetect
+from_iso-8859-1=8859_1
+from_unknown-8bit=JISAutoDetect
+#
+defaultFolders=inbox, draft, unsend, sent, trash
