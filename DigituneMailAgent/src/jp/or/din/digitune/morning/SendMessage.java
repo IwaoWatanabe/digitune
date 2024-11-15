@@ -199,8 +199,8 @@ public class SendMessage extends Message {
 					removeHeader(orderedheaders[i]);
 				}
 			}
-			for (Enumeration enum = headers.keys(); enum.hasMoreElements(); )
-				writeHeader(out, (String) enum.nextElement());
+			for (Enumeration en = headers.keys(); en.hasMoreElements(); )
+				writeHeader(out, (String) en.nextElement());
 			body = StringReplacer.replaceString(body, CRLF + ".", CRLF + "..");
 			if (body.length() > 0 && body.charAt(0) == '.')
 				body = "." + body;

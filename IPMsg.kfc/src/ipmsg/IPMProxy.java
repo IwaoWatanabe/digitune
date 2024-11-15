@@ -222,9 +222,9 @@ public class IPMProxy implements IPMComListener {
 				}
 			}
 		}
-		Enumeration enum = douts.keys();
-		while (enum.hasMoreElements()) {
-			DataOutputStream tmpdout = (DataOutputStream) enum.nextElement();
+		Enumeration en = douts.keys();
+		while (en.hasMoreElements()) {
+			DataOutputStream tmpdout = (DataOutputStream) en.nextElement();
 			try {
 				tmpdout.write(buf);
 				tmpdout.flush();

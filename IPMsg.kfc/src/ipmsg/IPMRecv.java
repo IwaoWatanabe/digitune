@@ -65,10 +65,10 @@ public class IPMRecv extends Thread {
 			IPMComEvent tmpevent = new IPMComEvent(this, dsock.getLocalPort()
 				, tmppack, tmpaddr);
 			synchronized (this) {
-				for (Enumeration enum = listeners.elements()
-					; enum.hasMoreElements(); ) {
+				for (Enumeration en = listeners.elements()
+					; en.hasMoreElements(); ) {
 					IPMComListener listener
-						= (IPMComListener) enum.nextElement();
+						= (IPMComListener) en.nextElement();
 					listener.receive(tmpevent);
 				}
 			}

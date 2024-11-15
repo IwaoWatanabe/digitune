@@ -141,8 +141,8 @@ public class RecvMessage extends Message {
 		if (headercolor != null)
 			body.setColor(headercolor);
 		if (visibleheaders == null || visibleheaders.length == 0) {
-			for (Enumeration enum = headers.keys(); enum.hasMoreElements(); ) {
-				String tmpkey = (String) enum.nextElement();
+			for (Enumeration en = headers.keys(); en.hasMoreElements(); ) {
+				String tmpkey = (String) en.nextElement();
 				String[] tmpstrs = getHeader(tmpkey);
 				for (int i = 0; i < tmpstrs.length; i++) {
 					body.append(toHeaderCase(tmpkey) + ": ");

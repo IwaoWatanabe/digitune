@@ -280,17 +280,17 @@ public class IPMsg implements IPMComListener {
 					tmpaddr[i] = null;
 				}
 		}
-		Enumeration enum = dialupmember.elements();
+		Enumeration en = dialupmember.elements();
 		for (int i = 0; i < dialup; i++)
 			tmpaddr[i + tmpaddr.length - dialup]
-				= (IPMAddress) enum.nextElement();
+				= (IPMAddress) en.nextElement();
 		return tmpaddr;
 	}
 	
 	synchronized void invokeListener(IPMEvent tmpevent) {
-		for (Enumeration enum = ipmlistener.elements()
-			; enum.hasMoreElements(); ) {
-			IPMListener listener = (IPMListener) enum.nextElement();
+		for (Enumeration en = ipmlistener.elements()
+			; en.hasMoreElements(); ) {
+			IPMListener listener = (IPMListener) en.nextElement();
 			listener.eventOccured(tmpevent);
 		}
 	}

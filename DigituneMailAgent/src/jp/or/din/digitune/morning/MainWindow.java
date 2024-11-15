@@ -168,9 +168,9 @@ public class MainWindow extends Frame {
 				new OutputStreamWriter(
 				new FileOutputStream(rc.getString("accountsFilename"))
 				, "UTF8"));
-            for (Enumeration enum = accounts.elements()
-                ; enum.hasMoreElements(); ) {
-				String tmpstr = ((Account) enum.nextElement()).toString();
+            for (Enumeration en = accounts.elements()
+                ; en.hasMoreElements(); ) {
+				String tmpstr = ((Account) en.nextElement()).toString();
                 writer.write(tmpstr, 0, tmpstr.length());
 				writer.newLine();
 			}

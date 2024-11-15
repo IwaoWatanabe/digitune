@@ -91,8 +91,8 @@ public class AddressDlg extends Dialog {
         });
         addresses.setScrollbarThickness(
             Integer.parseInt(rc.getString("scrollbarThickness")));
-        for (Enumeration enum = addrs.elements(); enum.hasMoreElements(); ) {
-            String[] strs = (String[]) enum.nextElement();
+        for (Enumeration en = addrs.elements(); en.hasMoreElements(); ) {
+            String[] strs = (String[]) en.nextElement();
             String tmpstr = strs[0] + " <" + strs[1] + ">";
             addresses.add(tmpstr);
         }

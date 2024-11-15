@@ -32,9 +32,9 @@ public class ProgressBox extends MsgBox implements Runnable {
 		Button cancel = new Button(rc.getString("cancelLabel"));
 		cancel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
-				for (Enumeration enum = procs.elements()
-					; enum.hasMoreElements(); )
-					((ProgressProcess) enum.nextElement()).interrupt();
+				for (Enumeration en = procs.elements()
+					; en.hasMoreElements(); )
+					((ProgressProcess) en.nextElement()).interrupt();
 			}
 		});
 		regbutton.add(cancel, "Center");
@@ -46,8 +46,8 @@ public class ProgressBox extends MsgBox implements Runnable {
 	}
 	
 	protected void windowClosing(WindowEvent we) {
-		for (Enumeration enum = procs.elements(); enum.hasMoreElements(); )
-			((ProgressProcess) enum.nextElement()).stop();
+		for (Enumeration en = procs.elements(); en.hasMoreElements(); )
+			((ProgressProcess) en.nextElement()).stop();
 		setVisible(false);
 		dispose();
 	}
@@ -87,11 +87,11 @@ public class ProgressBox extends MsgBox implements Runnable {
 		try {
 			thread.sleep(500);
 		} catch (InterruptedException ex) {}
-		for (Enumeration enum = procs.elements(); enum.hasMoreElements(); )
-			((ProgressProcess) enum.nextElement()).start();
+		for (Enumeration en = procs.elements(); en.hasMoreElements(); )
+			((ProgressProcess) en.nextElement()).start();
 		try {
-			for (Enumeration enum = procs.elements(); enum.hasMoreElements(); )
-				((ProgressProcess) enum.nextElement()).join();
+			for (Enumeration en = procs.elements(); en.hasMoreElements(); )
+				((ProgressProcess) en.nextElement()).join();
 		} catch (InterruptedException ex) {}
 		try {
 			thread.sleep(1000);

@@ -41,10 +41,10 @@ public class NormalSend extends IPMSend {
 		IPMComEvent ipmce = new IPMComEvent(this, dsock.getLocalPort()
 			, spack, saddr);
 		synchronized (this) {
-			for (Enumeration enum = listeners.elements()
-				; enum.hasMoreElements(); ) {
+			for (Enumeration en = listeners.elements()
+				; en.hasMoreElements(); ) {
 				IPMComListener listener
-					= (IPMComListener) enum.nextElement();
+					= (IPMComListener) en.nextElement();
 				listener.receive(ipmce);
 			}
 		}

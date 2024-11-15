@@ -114,8 +114,8 @@ public class SendWindow extends Frame {
         headers.add("cc");
         headers.add("bcc");
         Hashtable tmph = sm.getHeaders();
-        for (Enumeration enum = tmph.keys(); enum.hasMoreElements(); ) {
-            String tmpstr = (String) enum.nextElement();
+        for (Enumeration en = tmph.keys(); en.hasMoreElements(); ) {
+            String tmpstr = (String) en.nextElement();
             if (tmpstr.equals("to") || tmpstr.equals("cc")
                 || tmpstr.equals("bcc"))
                 continue;

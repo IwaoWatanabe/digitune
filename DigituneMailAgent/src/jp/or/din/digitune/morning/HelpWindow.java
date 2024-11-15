@@ -39,7 +39,14 @@ public class HelpWindow extends Frame {
 		});
 
 		final HTMLEditor body = new HTMLEditor(false);
-		body.open_file(new File(rc.getString("manualFile")));
+		File mf = new File(rc.getString("manualFile"));
+		if (mf.exists())
+			body.open_file(mf);
+		else {
+			String url = rc.getString("manualURL");
+			System.err.println("Manual URL: " + url);
+			body.goto_page(url);
+		}
 		gbc = new GridBagConstraints();
 		gbc.gridx = 0;
 		gbc.gridy = 1;
