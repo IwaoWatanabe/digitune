@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+    <META NAME=GENERATOR CONTENT="Webpad (Java; KFC) [http://ring.aist.go.jp/openlab/kyasu/]">
+    <TITLE></TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF">
+<HR align=left width="100%">
+<H2>
+インストール方法
+</H2>
+<HR align=left width="100%">
+<P>
+DMA をインストールするには、次の手順に従ってください。
+</P>
+<OL>
+<LI>
+まず、JDK or JRE (1.1 以降) をセットアップして、Java コマンド他が動作するようにしてください。
+<LI>
+DMA のアーカイブを適当なディレクトリで展開しておいてください。
+<LI>
+KFC 同梱版以外の場合は、KFC のアーカイブも同様に適当なディレクトリで展開しておいてください。またメール検索に正規表現を使用したい場合は、同じく GNU Regexp パッケージを展開しておいてください。
+</OL>
+<P>
+
+</P>
+<H3>
+■Java2 (JDK1.2) 以降をお使いの方
+</H3>
+<H4>
+その１. ちょっと上級者向け
+</H4>
+<OL>
+<LI>
+まず、KFC の jar ファイル「kfc.jar」を、利用する JavaVM の lib/ext フォルダにコピーします。
+<LI>
+メール検索に正規表現を使う場合も同様に GNU Regexp パッケージの jar ファイル「gnu-regexp-x.y.z.jar」を lib/ext フォルダにコピーしておきます。
+<LI>
+その後、DMA を展開したディレクトリで次のようにコマンドラインから入力することで起動できます。
+<PRE>
+% java -jar morning.jar
+</PRE>
+また、Windows 環境では morning.jar ファイルを単にダブルクリックするだけでも起動可能です。
+</OL>
+<H4>
+その２. 初心者向け
+</H4>
+<OL>
+<LI>
+まず KFC の jar ファイル「kfc.jar」と、(正規表現を利用する場合は) GNU Regexp
+の jar ファイル「gnu-regexp-x.y.z.jar」を、DMA のアーカイブを展開したディレク
+トリにコピーします。
+<LI>
+その後、DMA を展開したディレクトリで次のようにコマンドラインから入力することで起動できます。
+<PRE>
+% java -cp kfc.jar:gnu-regexp-x.y.z.jar:morning.jar jp.or.din.digitune.morning.MainWindow
+</PRE>
+なお、-cp オプション後の jar ファイルの区切り記号は、UNIX 環境では「:」、Windows 環境では「;」です。
+</OL>
+<H3>
+■JDK1.1 をお使いの方
+</H3>
+<P>
+KFC 同梱版以外では、まず KFC の配布アーカイブを入手してください。その後、KFC のアーカイブの中にある、「kfc.jar」ファイルを DMA を展開したディレクトリにコピーします。もし、正規表現パッケージを利用したい場合は、同様に GNU Regexp パッケージを入手後、「gnu-regexp-1.0.6.jar」を同じディレクトリにコピーしてください。
+</P>
+<P>
+続いて、次のようにコマンドを入力することで起動できます。
+</P>
+<BLOCKQUOTE>
+<PRE>
+(正規表現パッケージを利用しない場合)
+% jre -cp kfc.jar:morning.jar jp.or.din.digitune.morning.MainWindow
+
+(正規表現パッケージを利用する場合)
+% jre -cp kfc.jar:morning.jar:gnu-regexp-1.0.6.jar jp.or.din.digitune.morning.MainWindow
+</PRE>
+</BLOCKQUOTE>
+<P>
+jar ファイルの区切り文字は、Windows 環境では「;」、UNIX 環境では「:」です。上記コマンドをバッチファイル等にしておくと便利です。
+</P>
+<HR align=left width="100%">
+<P>
+<A href="../MANUAL.html">戻る</A>
+</P>
+</BODY>
+</HTML>
